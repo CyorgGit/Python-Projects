@@ -11,3 +11,4 @@ other_thing = int(test_thing)
 print(str("Your number is " + str(other_thing)) + str(", plus a randomly generated number, ") + str(random_num) + str(".") + str("\nWhen added together, it makes ") + str(other_thing + random_num) + str(".") + str("\nWow, what a cool number."))
 with open("awesome.txt", "w") as f:
     f.write(str("Chosen randomly generated numbers range:\n") + str(digits) + str("\nRandom number:\n") + str(random_num) + str("\nChosen number:\n") + str(test_thing) + str("\nNumbers added together:\n") + str(other_thing + random_num))
+input("\nPress enter to exit.\n")
