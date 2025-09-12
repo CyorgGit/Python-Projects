@@ -28,5 +28,5 @@ elif the_choice.lower() == "l":
             f.write(str("You left the shop."))
 else:
     with open("choice.txt", "w") as f:
-        f.write(str("Not sure what that even means.\nYou should probably write something that counts as a valid answer next time."))
+        f.write(str("Not sure what that even means.\nYou should probably write something that counts as a valid answer next time, instead of " + str(the_choice) + str(".")))
 input("\n\033[94mPress enter to exit.\n")
