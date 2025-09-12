@@ -1,10 +1,12 @@
 import random
+import os
+os.system('')
 random_num = random.randint(0, 100)
 if random_num == 0:
     random_num = "free!"
 elif random_num == 100:
     random_num = 10000000000000000
-# If you haven't, DOWNLOAD THE "shop_list.txt" FILE!
+# If you haven't, DOWNLOAD THE "shop_list.py" FILE!
 from shop_list import objectlist
 random_object = random.choice(objectlist)
 print(str("You can buy a " + str(random_object) + str(" for \n\033[92m$") + str(random_num) + str("\033[97m.")))
