@@ -1,5 +1,5 @@
 objectlist = ["apple", 
-"bag", "bed", "broken in half plastic spork", 
+"bag", "bed", "broken in half plastic spork", "burger", 
 "car that will explode if you start it", "cracked egg", "country compilation cd"
 "desk", "Don't buy this omg Dude please no", 
 "elephant statue",
@@ -8,7 +8,19 @@ objectlist = ["apple",
 "half-eaten chicken nugget",
 "infinite ice cream!"
 "josh's jacket"
-"microwave", "phone", "potato", "toothbrush", 
-"used burger", "yo gurt", "nothing", 
-"spoon", "triangle-shaped pb&j sandwich",  
-"playing card", "unopened carton of chocolate milk", "keychain of a weird animal", "kitty!"]
+"keychain of a weird animal", "kitty!",
+"large lame lava lamp light"
+"microwave", "toothbrush",
+"nothing",
+"orangutan orange",
+"phone", "potato", "playing card",
+"quartz quarter",
+"robux gift card",
+"spoon",
+"triangle-shaped pb&j sandwich", "toothbrush",
+"used burger", "unopened carton of chocolate milk",
+"violet visor",
+"watermelon-flavored water",
+"xylophone.",
+"yo gurt",
+"ziplock bag of zucchini"]
