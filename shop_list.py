@@ -1,6 +1,6 @@
-objectlist = ["apple", 
+objectlist = ["apple", "avocado",
 "bag", "bed", "broken in half plastic spork", "burger", 
-"car that will explode if you start it", "cracked egg", "country compilation cd"
+"car that will explode as soon as you start it", "cracked egg", "country compilation cd"
 "desk", "Don't buy this omg Dude please no", 
 "elephant statue",
 "funny cat pictures", "fully grown man",
