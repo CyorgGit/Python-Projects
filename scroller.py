@@ -3,7 +3,7 @@ import random
 import os
 os.system('')
 red = "\033[101m  "
-dark_red = "\033[41m"
+dark_red = "\033[41m  "
 orange = "\033[43m  "
 yellow = "\033[103m  "
 lime = "\033[102m  "
@@ -20,7 +20,6 @@ color2 = light_gray
 color1_amount = 9
 color2_amount = 0
     
-# Currently, this takes up way too much space. It's incredibly easy to optimize, but I don't feel like it right now.
 while True:
     for i in range(9):
         for i in range(9):
