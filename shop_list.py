@@ -9,7 +9,7 @@ objectlist = ["apple", "avocado",
 "infinite ice cream!",
 "josh's jacket",
 "keychain of a weird animal", "kitty!",
-"large lame lava lamp light"
+"large lame lava lamp light",
 "microwave", "toothbrush",
 "nothing",
 "orangutan orange", "otamatone",
@@ -24,3 +24,4 @@ objectlist = ["apple", "avocado",
 "xylophone.",
 "yo gurt",
 "ziplock bag of zucchini"]
+
