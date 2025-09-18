@@ -1,13 +1,13 @@
 objectlist = ["apple", "avocado",
 "bag", "bed", "broken in half plastic spork", "burger", 
-"car that will explode as soon as you start it", "cracked egg", "country compilation cd"
+"car that will explode as soon as you start it", "cracked egg", "country compilation cd",
 "desk", "Don't buy this omg Dude please no", "didgeridoo",
 "elephant statue",
 "funny cat pictures", "fully grown man",
 "glasses that are smudged, stained, and cracked",
 "half-eaten chicken nugget",
-"infinite ice cream!"
-"josh's jacket"
+"infinite ice cream!",
+"josh's jacket",
 "keychain of a weird animal", "kitty!",
 "large lame lava lamp light"
 "microwave", "toothbrush",
