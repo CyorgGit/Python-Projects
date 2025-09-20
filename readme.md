@@ -1,0 +1,1 @@
+Collection of simple, usually relatively basic Python programs I write when bored at school.
