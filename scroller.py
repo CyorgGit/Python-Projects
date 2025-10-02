@@ -22,7 +22,7 @@ color3 = black
 color1_amount = 9
 color2_amount = 0
 color3_amount = 0
-pattern = input("original, checkboard, paul, water, rainbow, vertical, text, or zig-zag text? ")
+pattern = input("original, checkboard, paul, water, rainbow, vertical, text, zig-zag text, portal, or portal text? ")
 while True:
     if pattern == "original" or "":
         for i in range(9):
@@ -144,6 +144,53 @@ while True:
                 color3_amount = color3_amount - 1
                 time.sleep(0.01)
             s1 = 0
+    elif pattern == "portal":
+        print(cyan * 13 + black)
+        print(cyan + white * 11 + cyan + black)
+        print(cyan * 2 + white * 9 + cyan * 2 + black)
+        for i in range(9):
+            for i in range(9):
+                print("    " + color1 * color1_amount + color2 * color2_amount + color3)
+                time.sleep(.01)
+            color1_amount = color1_amount - 1
+            color2_amount = color2_amount + 1
+        for i in range(9):
+            for i in range(9):
+                print("    " + color2 * color2_amount + color1 * color1_amount + color3)
+                time.sleep(.01)
+            color1_amount = color1_amount + 1
+            color2_amount = color2_amount - 1
+        print(orange * 2 + white * 9 + orange * 2 + black)
+        print(orange + white * 11 + orange + black)
+        print(orange * 13 + black)
+        for i in range(50):
+            print("\n")
+            time.sleep(.01)
+    elif pattern == "portal text":
+        s = input("Type something! ")
+        while True:
+            print(cyan * (len(s) + 1) + black)
+            print(cyan + white * (len(s) - 1) + cyan + black)
+            print(cyan * 2 + white * (len(s) - 3) + cyan * 2 + black)
+            s1 = 0
+            for i in range(len(s)):
+                print("    " + color3 * color3_amount + s[s1:] + color3)
+                s1 = s1 + 1
+                color3_amount = color3_amount + 1
+                time.sleep(0.01)
+            s1 = len(s) - 1
+            for i in range(len(s)):
+                print("    " + color3 * color3_amount + s[s1:] + color3)
+                s1 = s1 - 1
+                color3_amount = color3_amount - 1
+                time.sleep(0.01)
+            s1 = 0
+            print(orange * 2 + white * (len(s) - 3) + orange * 2 + black)
+            print(orange + white * (len(s) - 1) + orange + black)
+            print(orange * (len(s) + 1) + black)
+            for i in range(50):
+                print("\n")
+                time.sleep(.01)
     else:
         print("Choose something that actually works!")
         time.sleep(1)
