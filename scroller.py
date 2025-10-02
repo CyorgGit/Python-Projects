@@ -22,7 +22,7 @@ color3 = black
 color1_amount = 9
 color2_amount = 0
 color3_amount = 0
-pattern = input("original, checkboard, paul, water, rainbow, or vertical? ")
+pattern = input("original, checkboard, paul, water, rainbow, vertical, text, or zig-zag text? ")
 while True:
     if pattern == "original" or "":
         for i in range(9):
@@ -97,7 +97,7 @@ while True:
         time.sleep(.01)
         print(str(" ") + rainbow)
         time.sleep(.01)
-    if pattern == "vertical":
+    elif pattern == "vertical":
         color1_amount = 25
         for i in range(5):
             for i in range(5):
@@ -114,3 +114,37 @@ while True:
             color1_amount = color1_amount + 2
             color2_amount = color2_amount - 1
             color3_amount = color3_amount - 1
+    elif pattern == "text":
+        s = input("Type something! ")
+        s1 = 0
+        while True:
+            for i in range(len(s)):
+                print(s[s1:])
+                s1 = s1 + 1
+                time.sleep(0.01)
+            s1 = len(s) - 1
+            for i in range(len(s)):
+                print(s[s1:])
+                s1 = s1 - 1
+                time.sleep(0.01)
+            s1 = 0
+    elif pattern == "zig-zag text":
+        s = input("Type something! ")
+        s1 = 0
+        while True:
+            for i in range(len(s)):
+                print(color3 * color3_amount + s[s1:] + color3)
+                s1 = s1 + 1
+                color3_amount = color3_amount + 1
+                time.sleep(0.01)
+            s1 = len(s) - 1
+            for i in range(len(s)):
+                print(color3 * color3_amount + s[s1:] + color3)
+                s1 = s1 - 1
+                color3_amount = color3_amount - 1
+                time.sleep(0.01)
+            s1 = 0
+    else:
+        print("Choose something that actually works!")
+        time.sleep(1)
+        break
