@@ -26,7 +26,6 @@ print(color1 + color1 + color1 + color3 + color1 + color1 + color1 + color3 + co
 pattern = input("\n\033[4mChoose one!\n\n\033[0mOriginal - Spinning thing.\nCheckerboard - Checkerboard/Chess pattern.\nCheckerboard 2.0 - Spinning checkerboard!\nPaul\nWater - Waterfall.\nRainbow - Wavy rainbow.\nVertical - Stairs, or an infinitely rotating cube.\nZig-Zag Text - Text goes from side to side.\nPortal - Original, but now with portals added!\nPortal Text - Zig-zag text, but with portals.\n\n\033[32m> \033[4m")
 print("\033[0m")
 while True:
-    
         if pattern.lower() == "original" or "":
             for i in range(9):
                 for i in range(9):
