@@ -247,6 +247,7 @@ while True:
                 sm = str("")
                 for i in range(10):
                     matrix()
+                    time.sleep(.01)
         else:
             print("Choose something that actually works!")
             time.sleep(1)
