@@ -23,7 +23,7 @@ color1_amount = 9
 color2_amount = 0
 color3_amount = 0
 print(color1 + color1 + color1 + color3 + color1 + color1 + color1 + color3 + color1 + color1 + color1 + color3 + color1 + color1 + color1 + color3 + color1 + color3 + color3 + color3 + color1 + color3 + color3 + color3 + color1 + color1 + color1 + color3 + color1 + color1 + color1 + color3 + "\n" + color1 + color3 + color3 + color3 + color1 + color3 + color1 + color3 + color1 + color3 + color1 + color3 + color1 + color3 + color1 + color3 + color1 + color3 + color3 + color3 + color1 + color3 + color3 + color3 + color1 + color3 + color3 + color3 + color1 + color3 + color1 + color3 + "\n" + color1 + color1 + color1 + color3 + color1 + color3 + color3 + color3 + color1 + color1 + color3 + color3 + color1 + color3 + color1 + color3 + color1 + color3 + color3 + color3 + color1 + color3 + color3 + color3 + color1 + color1 + color3 + color3 + color1 + color1 + color3 + color3 + "\n" + color3 + color3 + color1 + color3 + color1 + color3 + color1 + color3 + color1 + color3 + color1 + color3 + color1 + color3 + color1 + color3 + color1 + color3 + color3 + color3 + color1 + color3 + color3 + color3 + color1 + color3 + color3 + color3 + color1 + color3 + color1 + color3 + "\n" + color1 + color1 + color1 + color3 + color1 + color1 + color1 + color3 + color1 + color3 + color1 + color3 + color1 + color1 + color1 + color3 + color1 + color1 + color1 + color3 + color1 + color1 + color1 + color3 + color1 + color1 + color1 + color3 + color1 + color3 + color1 + color3)
-pattern = input("\n\033[4mChoose one!\n\n\033[0mOriginal - Spinning thing.\nCheckerboard - Checkerboard/Chess pattern.\nCheckerboard 2.0 - Spinning checkerboard!\nPaul\nWater - Waterfall.\nRainbow - Wavy rainbow.\nVertical - Stairs, or an infinitely rotating cube.\nZig-Zag Text - Text goes from side to side.\nPortal - Original, but now with portals added!\nPortal Text - Zig-zag text, but with portals.\nStatic - Glitchy.\n\n\033[32m> \033[4m")
+pattern = input("\n\033[4mChoose one!\n\n\033[0mOriginal - Spinning thing.\nCheckerboard - Checkerboard/Chess pattern.\nCheckerboard 2.0 - Spinning checkerboard!\nPaul\nWater - Waterfall.\nRainbow - Wavy rainbow.\nVertical - Stairs, or an infinitely rotating cube.\nZig-Zag Text - Text goes from side to side.\nPortal - Original, but now with portals added!\nPortal Text - Zig-zag text, but with portals.\nStatic - Glitchy.\nMatrix - Green falling text.\n\n\033[32m> \033[4m")
 print("\033[0m")
 while True:
         if pattern.lower() == "original" or "":
@@ -232,6 +232,21 @@ while True:
             print(black * 4 + white + black + "\n" + black * 3 + white * 2 + black + "\n" + (black * 4 + white + black + "\n") * 2 + black * 3 + white * 3 + black)
             time.sleep(1)
             break
+        elif pattern.lower() == "matrix":
+            def matrix():
+                sm = str("")
+                for i in range(10):
+                    rm = random.randint(0,(len(s) - 1))
+                    srm = random.randint(0,3)
+                    sm = sm + (" "*srm) + mList[rm]
+                print(sm)
+            s = input("Type something! \033[92m")
+            print(black)
+            mList = list(s)
+            while True:
+                sm = str("")
+                for i in range(10):
+                    matrix()
         else:
             print("Choose something that actually works!")
             time.sleep(1)
