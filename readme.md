@@ -4,7 +4,7 @@ List of each one and what they do:\
 `calc.py` is a calculator that adds two randomly generated numbers.\
 `clock.py` is a working digital clock.\
 `cube.py` is a really, really rough attempt to try to visualize a spinning 3D cube.\
-`mario.py` shows a sprite of Mario. Usually.
+`mario.py` shows a sprite of Mario. Usually.\
 `mcdays.py` counts an approximation of real life time spent in a Minecraft world.\
 `rainbow.py` is a rainbow scroller.\
 `scroller.py` is a various assortment of scrollers I've made.\
