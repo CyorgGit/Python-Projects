@@ -31,7 +31,7 @@ sevT = (a,c,c,c,c) # 7
 eigT = (a,h,a,h,a) # 8
 ninT = (a,h,a,c,c) # 9
 colT = (i,f,i,f,i) # 10
-aaaT = (o,j,m,j,j) # 11
+aaaT = (m,j,m,j,j) # 11
 pppT = (m,j,m,n,n) # 12
 mmmT = (j,k,l,j,j) # 13
 fonT = (zerT,oneT,twoT,thrT,fouT,fivT,sixT,sevT,eigT,ninT,colT,aaaT,pppT,mmmT)
@@ -55,7 +55,7 @@ while True:
     for i in range(5):
         print(''.join((fonT[hour_one])[i]) + ''.join((fonT[hour_two])[i]) + ''.join((fonT[colon])[i]) + ''.join((fonT[minute_one])[i]) + ''.join((fonT[minute_two])[i]) + ''.join((fonT[colon])[i]) + ''.join((fonT[second_one])[i]) + ''.join((fonT[second_two])[i]))
     print("\n")
-    if hours > 12:
+    if hours > 11:
         for i in range(5):
             print(''.join((fonT[12])[i]) + ''.join((fonT[13])[i]))
     else:
