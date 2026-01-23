@@ -1,10 +1,12 @@
 import random
+import os
 red = "\033[101m  "
 orange = "\033[43m  "
 green = "\033[42m  "
 black = "\033[40m  "
 white = "\033[107m  "
 random_num = random.randint(0,100)
+os.system("")
 if random_num != 85:
     color1 = red
     color2 = orange
@@ -31,3 +33,4 @@ o = black + color3 * 3 + black * 4 + color3 * 3 + black * 2
 p = color3 * 4 + black * 4 + color3 * 4 + black
 z = "\n"
 print(a + z + b + z + c + z + d + z + e + z + f + z + g + z + h + z + i + z + j + z + k + z + l + z + m + z + n + z + o + z + p)
+input()
