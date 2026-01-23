@@ -10,4 +10,5 @@ List of each one and what they do:\
 `scroller.py` is a various assortment of scrollers I've made.\
 `shop.py` is a basic shop system. ***This needs `shop_list.py` to work!***\
 `shop_list.py` is a list for `shop.py`, separated for easy modification and to not take up too much space on `shop.py`.\
+`text_engine.py` is a thing that lets you put text in and get text displayed back in your terminal.\
 `textscroller.py` is a text scroller.
