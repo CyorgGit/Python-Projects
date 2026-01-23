@@ -75,7 +75,8 @@ zzzT = (m,v,r,o,m) # 36
 excT = (f,f,f,i,f) # 37
 colT = (i,f,i,f,i) # 38
 spaT = (C,C,C,C,C) # 39
-fonT = (zerT,oneT,twoT,thrT,fouT,fivT,sixT,sevT,eigT,ninT,colT,aaaT,bbbT,cccT,dddT,eeeT,fffT,gggT,hhhT,iiiT,jjjT,kkkT,lllT,mmmT,nnnT,oooT,pppT,qqqT,rrrT,sssT,tttT,uuuT,vvvT,wwwT,xxxT,yyyT,zzzT,excT,colT,spaT)
+apoT = (f,f,i,i,i) # 40
+fonT = (zerT,oneT,twoT,thrT,fouT,fivT,sixT,sevT,eigT,ninT,colT,aaaT,bbbT,cccT,dddT,eeeT,fffT,gggT,hhhT,iiiT,jjjT,kkkT,lllT,mmmT,nnnT,oooT,pppT,qqqT,rrrT,sssT,tttT,uuuT,vvvT,wwwT,xxxT,yyyT,zzzT,excT,colT,spaT,apoT)
 for i in range(5):
     print("".join((fonT[11])[i]) + "".join((fonT[12])[i]) + "".join((fonT[13])[i]) + "".join((fonT[14])[i]) + "".join((fonT[15])[i]))
 print("\n")
@@ -95,14 +96,14 @@ for i in range(5):
     print("".join((fonT[36])[i]) + "".join((fonT[0])[i]) + "".join((fonT[1])[i]) + "".join((fonT[2])[i]) + "".join((fonT[3])[i]) + "".join((fonT[4])[i]) + "".join((fonT[5])[i]))
 print("\n")
 for i in range(5):
-    print("".join((fonT[6])[i]) + "".join((fonT[7])[i]) + "".join((fonT[8])[i]) + "".join((fonT[9])[i]) + "".join((fonT[37])[i]) + "".join((fonT[38])[i]))
+    print("".join((fonT[6])[i]) + "".join((fonT[7])[i]) + "".join((fonT[8])[i]) + "".join((fonT[9])[i]) + "".join((fonT[37])[i]) + "".join((fonT[38])[i]) + "".join((fonT[40])[i]))
 
 letters = input("Say something: ")
 letter_list = []
 unicode_pre_convert = (33,58,32)
 unicode_pos_convert = (37,38,39)
 for i in range(len(letters)):
-    print(ord(letters[i]))
+#    print(ord(letters[i]))
     if letters[i].isalpha() == True:
         if letters[i].isupper() == True:
             letter_list.append(ord((letters[i]).lower())-86)
@@ -110,7 +111,16 @@ for i in range(len(letters)):
             letter_list.append(ord(letters[i])-86)
     if letters[i].isdigit() == True:
         letter_list.append(ord(letters[i])-48)
-""" I'll fix this later idk
+    if letters[i] == "!":
+        letter_list.append(ord(letters[i])+4)
+    if letters[i] == ":":
+        letter_list.append(ord(letters[i])-20)
+    if letters[i] == " ":
+        letter_list.append(ord(letters[i])+7)
+    if letters[i] == "'":
+        letter_list.append(ord(letters[i]) + 1)
+# print(letter_list)
+""" I'll fix this later idk. The plan for now is to do a much less elegant solution and everything
     if letters[i] in unicode_pre_convert:
         print("Yay!")
         for j in range(len[unicode_pre_convert]):
