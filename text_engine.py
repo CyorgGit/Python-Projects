@@ -74,12 +74,15 @@ yyyT = (j,A,r,r,r) # 35
 zzzT = (m,v,r,o,m) # 36
 excT = (f,f,f,i,f) # 37
 colT = (i,f,i,f,i) # 38
-spaT = (C,C,C,C,C) # 39
-apoT = (f,f,i,i,i) # 40
-perT = (i,i,i,i,f) # 41
-pluT = (C,B,a,B,C) # 42
-equT = (C,a,C,a,C) # 43
-fonT = (zerT,oneT,twoT,thrT,fouT,fivT,sixT,sevT,eigT,ninT,colT,aaaT,bbbT,cccT,dddT,eeeT,fffT,gggT,hhhT,iiiT,jjjT,kkkT,lllT,mmmT,nnnT,oooT,pppT,qqqT,rrrT,sssT,tttT,uuuT,vvvT,wwwT,xxxT,yyyT,zzzT,excT,colT,spaT,apoT,perT,pluT,equT)
+apoT = (f,f,i,i,i) # 39
+lpaT = (d,b,b,b,d) # 40
+rpaT = (e,c,c,c,e) # 41
+spaT = (C,C,C,C,C) # 42
+pluT = (C,B,a,B,C) # 43
+comT = (i,i,i,f,f) # 44
+equT = (C,a,C,a,C) # 45
+perT = (i,i,i,i,f) # 46
+fonT = (zerT,oneT,twoT,thrT,fouT,fivT,sixT,sevT,eigT,ninT,colT,aaaT,bbbT,cccT,dddT,eeeT,fffT,gggT,hhhT,iiiT,jjjT,kkkT,lllT,mmmT,nnnT,oooT,pppT,qqqT,rrrT,sssT,tttT,uuuT,vvvT,wwwT,xxxT,yyyT,zzzT,excT,colT,apoT,lpaT,rpaT,spaT,pluT,comT,equT,perT)
 for i in range(5):
     print("".join((fonT[11])[i]) + "".join((fonT[12])[i]) + "".join((fonT[13])[i]) + "".join((fonT[14])[i]) + "".join((fonT[15])[i]))
 print("\n")
@@ -99,47 +102,35 @@ for i in range(5):
     print("".join((fonT[36])[i]) + "".join((fonT[0])[i]) + "".join((fonT[1])[i]) + "".join((fonT[2])[i]) + "".join((fonT[3])[i]) + "".join((fonT[4])[i]) + "".join((fonT[5])[i]))
 print("\n")
 for i in range(5):
-    print("".join((fonT[6])[i]) + "".join((fonT[7])[i]) + "".join((fonT[8])[i]) + "".join((fonT[9])[i]) + "".join((fonT[37])[i]) + "".join((fonT[38])[i]) + "".join((fonT[40])[i]) + "".join((fonT[41])[i]) + "".join((fonT[42])[i]))
+    print("".join((fonT[6])[i]) + "".join((fonT[7])[i]) + "".join((fonT[8])[i]) + "".join((fonT[9])[i]) + "".join((fonT[37])[i]) + "".join((fonT[38])[i]) + "".join((fonT[39])[i]) + "".join((fonT[43])[i]) + "".join((fonT[45])[i]))
 print("\n")
 for i in range(5):
-    print("".join((fonT[43])[i]))
+    print("".join((fonT[46])[i]) + "".join((fonT[44])[i]) + "".join((fonT[40])[i]) + "".join((fonT[41])[i]))
 while True:
     letters = input("Say something: ")
     letter_list = []
     unicode_pre_convert = (33,58,32)
     unicode_pos_convert = (37,38,39)
     for i in range(len(letters)):
-        #print(ord(letters[i]))
+        print(ord(letters[i]))
         if letters[i].isalpha() == True:
             if letters[i].isupper() == True:
                 letter_list.append(ord((letters[i]).lower())-86)
             else:
                 letter_list.append(ord(letters[i])-86)
-        if letters[i].isdigit() == True:
+        elif letters[i].isdigit() == True:
             letter_list.append(ord(letters[i])-48)
-        if letters[i] == "!":
+        elif letters[i] == "!":
             letter_list.append(ord(letters[i])+4)
-        if letters[i] == ":":
+        elif letters[i] == ":":
             letter_list.append(ord(letters[i])-20)
-        if letters[i] == " ":
-            letter_list.append(ord(letters[i])+7)
-        if letters[i] == "'":
-            letter_list.append(ord(letters[i]) + 1)
-        if letters[i] == ".":
-            letter_list.append(ord(letters[i]) - 5)
-        if letters[i] == "+":
-            letter_list.append(ord(letters[i]) - 1)
-        if letters[i] == "=":
-            letter_list.append(ord(letters[i]) - 18)
-    # print(letter_list)
-    """ I'll fix this later idk. The plan for now is to do a much less elegant solution and everything
-        if letters[i] in unicode_pre_convert:
-            print("Yay!")
-            for j in range(len[unicode_pre_convert]):
-                if unicode_pre_convert[j] == letters[i]:
-                    letter_list.append(ord(unicode_pos_convert[j - 1]))
-                    print(unicode_pos_convert[j - 1])
-    """
+        elif letters[i] == " ":
+            letter_list.append(ord(letters[i])+10)
+        elif letters[i] == "=":
+            letter_list.append(ord(letters[i]) - 16)
+        else:
+            if letters[i].isalpha() == False:
+                letter_list.append(ord(letters[i]))
     jerry = []
     for i in range(5):
         jerry.append("".join((fonT[letter_list[0]])[i]))
