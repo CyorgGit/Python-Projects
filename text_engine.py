@@ -71,7 +71,7 @@ xxxT = (j,A,r,A,j) # 34
 yyyT = (j,A,r,r,r) # 35
 zzzT = (m,v,r,o,m) # 36
 excT = (f,f,f,i,f) # 37
-colT = (i,f,i,f,i) # 38
+colT = (i,f,i,f,i) # 38 This one is useless. I have a duplicate. Apostrophe would take up this space.
 apoT = (f,f,i,i,i) # 39
 lpaT = (d,b,b,b,d) # 40
 rpaT = (e,c,c,c,e) # 41
@@ -131,9 +131,9 @@ while True:
         elif letters[i] == "!":
             letter_list.append(ord(letters[i]) + 4)
         elif letters[i] == ":":
-            letter_list.append(ord(letters[i])-20)
+            letter_list.append(ord(letters[i]) - 48)
         elif letters[i] == " ":
-            letter_list.append(ord(letters[i])+15)
+            letter_list.append(ord(letters[i]) + 15)
         elif letters[i] == "=":
             letter_list.append(ord(letters[i]) - 16)
         elif letters[i] == "?":
