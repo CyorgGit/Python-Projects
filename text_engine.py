@@ -81,7 +81,12 @@ comT = (i,i,i,f,f) # 44
 equT = (C,a,C,a,C) # 45
 perT = (i,i,i,i,f) # 46
 spaT = (C,C,C,C,C) # 47
-fonT = (zerT,oneT,twoT,thrT,fouT,fivT,sixT,sevT,eigT,ninT,colT,aaaT,bbbT,cccT,dddT,eeeT,fffT,gggT,hhhT,iiiT,jjjT,kkkT,lllT,mmmT,nnnT,oooT,pppT,qqqT,rrrT,sssT,tttT,uuuT,vvvT,wwwT,xxxT,yyyT,zzzT,excT,colT,apoT,lpaT,rpaT,astT,pluT,comT,equT,perT,spaT)
+queT = (a,c,d,C,B) # 48
+lbrT = (a,b,b,b,a) # 49
+rbrT = (a,c,c,c,a) # 50
+lesT = (c,B,b,B,c) # 51
+greT = (b,B,c,B,b) # 52
+fonT = (zerT,oneT,twoT,thrT,fouT,fivT,sixT,sevT,eigT,ninT,colT,aaaT,bbbT,cccT,dddT,eeeT,fffT,gggT,hhhT,iiiT,jjjT,kkkT,lllT,mmmT,nnnT,oooT,pppT,qqqT,rrrT,sssT,tttT,uuuT,vvvT,wwwT,xxxT,yyyT,zzzT,excT,colT,apoT,lpaT,rpaT,astT,pluT,comT,equT,perT,spaT,queT,lbrT,rbrT,lesT,greT)
 for i in range(5):
     print("".join((fonT[11])[i]) + "".join((fonT[12])[i]) + "".join((fonT[13])[i]) + "".join((fonT[14])[i]) + "".join((fonT[15])[i]))
 print("\n")
@@ -104,29 +109,43 @@ for i in range(5):
     print("".join((fonT[6])[i]) + "".join((fonT[7])[i]) + "".join((fonT[8])[i]) + "".join((fonT[9])[i]) + "".join((fonT[37])[i]) + "".join((fonT[38])[i]) + "".join((fonT[39])[i]) + "".join((fonT[43])[i]) + "".join((fonT[45])[i]))
 print("\n")
 for i in range(5):
-    print("".join((fonT[46])[i]) + "".join((fonT[44])[i]) + "".join((fonT[40])[i]) + "".join((fonT[41])[i]) + "".join((fonT[42])[i]))
+    print("".join((fonT[46])[i]) + "".join((fonT[44])[i]) + "".join((fonT[40])[i]) + "".join((fonT[41])[i]) + "".join((fonT[42])[i]) + "".join((fonT[48])[i]) + "".join((fonT[49])[i]) + "".join((fonT[50])[i]))
+print("\n")
+for i in range(5):
+    print("".join((fonT[51])[i]) + "".join((fonT[52])[i]))
 while True:
     letters = input("Say something: ")
+    if len(letters) == 0:
+        while len(letters) == 0:
+            letters = input("Say something: ")
     letter_list = []
-    unicode_pre_convert = (33,58,32)
-    unicode_pos_convert = (37,38,39)
     for i in range(len(letters)):
-    #print(ord(letters[i]))
+        #print(ord(letters[i]))
         if letters[i].isalpha() == True:
             if letters[i].isupper() == True:
-                letter_list.append(ord((letters[i]).lower())-86)
+                letter_list.append(ord((letters[i]).lower()) - 86)
             else:
-                letter_list.append(ord(letters[i])-86)
+                letter_list.append(ord(letters[i]) - 86)
         elif letters[i].isdigit() == True:
-            letter_list.append(ord(letters[i])-48)
+            letter_list.append(ord(letters[i]) - 48)
         elif letters[i] == "!":
-            letter_list.append(ord(letters[i])+4)
+            letter_list.append(ord(letters[i]) + 4)
         elif letters[i] == ":":
             letter_list.append(ord(letters[i])-20)
         elif letters[i] == " ":
             letter_list.append(ord(letters[i])+15)
         elif letters[i] == "=":
             letter_list.append(ord(letters[i]) - 16)
+        elif letters[i] == "?":
+            letter_list.append(ord(letters[i]) - 15)
+        elif letters[i] == "[":
+            letter_list.append(ord(letters[i]) - 42)
+        elif letters[i] == "]":
+            letter_list.append(ord(letters[i]) - 43)
+        elif letters[i] == "<":
+            letter_list.append(ord(letters[i]) - 9)
+        elif letters[i] == ">":
+            letter_list.append(ord(letters[i]) - 10)
         else:
             if letters[i].isalpha() == False:
                 letter_list.append(ord(letters[i]))
