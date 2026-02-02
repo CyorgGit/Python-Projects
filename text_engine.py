@@ -1,5 +1,3 @@
-import datetime
-import time
 import os
 os.system("")
 def bye():
@@ -113,7 +111,7 @@ while True:
     unicode_pre_convert = (33,58,32)
     unicode_pos_convert = (37,38,39)
     for i in range(len(letters)):
-        print(ord(letters[i]))
+    #print(ord(letters[i]))
         if letters[i].isalpha() == True:
             if letters[i].isupper() == True:
                 letter_list.append(ord((letters[i]).lower())-86)
