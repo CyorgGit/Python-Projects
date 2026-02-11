@@ -88,7 +88,9 @@ rbrT = (a,c,c,c,a) # 50
 lesT = (c,B,b,B,c) # 51
 greT = (b,B,c,B,b) # 52
 spaT = (C,C,C,C,C) # 53
-fonT = (zerT,oneT,twoT,thrT,fouT,fivT,sixT,sevT,eigT,ninT,colT,aaaT,bbbT,cccT,dddT,eeeT,fffT,gggT,hhhT,iiiT,jjjT,kkkT,lllT,mmmT,nnnT,oooT,pppT,qqqT,rrrT,sssT,tttT,uuuT,vvvT,wwwT,xxxT,yyyT,zzzT,excT,pctT,apoT,lpaT,rpaT,astT,pluT,comT,equT,perT,slaT,queT,lbrT,rbrT,lesT,greT,spaT)
+bslT = (b,b,B,c,c) # 54
+quoT = (h,h,C,C,C) # 55
+fonT = (zerT,oneT,twoT,thrT,fouT,fivT,sixT,sevT,eigT,ninT,colT,aaaT,bbbT,cccT,dddT,eeeT,fffT,gggT,hhhT,iiiT,jjjT,kkkT,lllT,mmmT,nnnT,oooT,pppT,qqqT,rrrT,sssT,tttT,uuuT,vvvT,wwwT,xxxT,yyyT,zzzT,excT,pctT,apoT,lpaT,rpaT,astT,pluT,comT,equT,perT,slaT,queT,lbrT,rbrT,lesT,greT,spaT,bslT,quoT)
 for i in range(5):
     print("".join((fonT[11])[i]) + "".join((fonT[12])[i]) + "".join((fonT[13])[i]) + "".join((fonT[14])[i]) + "".join((fonT[15])[i]))
 print("\n")
@@ -108,13 +110,13 @@ for i in range(5):
     print("".join((fonT[36])[i]) + "".join((fonT[0])[i]) + "".join((fonT[1])[i]) + "".join((fonT[2])[i]) + "".join((fonT[3])[i]) + "".join((fonT[4])[i]) + "".join((fonT[5])[i]))
 print("\n")
 for i in range(5):
-    print("".join((fonT[6])[i]) + "".join((fonT[7])[i]) + "".join((fonT[8])[i]) + "".join((fonT[9])[i]) + "".join((fonT[37])[i]) + "".join((fonT[10])[i]) + "".join((fonT[39])[i]) + "".join((fonT[43])[i]) + "".join((fonT[45])[i]))
+    print("".join((fonT[6])[i]) + "".join((fonT[7])[i]) + "".join((fonT[8])[i]) + "".join((fonT[9])[i]) + "".join((fonT[10])[i]) + "".join((fonT[46])[i]) + "".join((fonT[44])[i]) + "".join((fonT[39])[i]) + "".join((fonT[55])[i]))
 print("\n")
 for i in range(5):
-    print("".join((fonT[46])[i]) + "".join((fonT[44])[i]) + "".join((fonT[40])[i]) + "".join((fonT[41])[i]) + "".join((fonT[51])[i]) + "".join((fonT[52])[i]) + "".join((fonT[49])[i]) + "".join((fonT[50])[i]))
+    print("".join((fonT[40])[i]) + "".join((fonT[41])[i]) + "".join((fonT[51])[i]) + "".join((fonT[52])[i]) + "".join((fonT[49])[i]) + "".join((fonT[50])[i]))
 print("\n")
 for i in range(5):
-    print("".join((fonT[42])[i]) + "".join((fonT[48])[i]) + "".join((fonT[38])[i]) + "".join((fonT[47])[i]))
+    print("".join((fonT[43])[i]) + "".join((fonT[45])[i]) + "".join((fonT[42])[i]) + "".join((fonT[37])[i]) + "".join((fonT[48])[i]) + "".join((fonT[38])[i]) + "".join((fonT[47])[i]) + "".join((fonT[54])[i]))
 while True:
     letters = input("Say something: ")
     if len(letters) == 0:
@@ -150,6 +152,10 @@ while True:
             letter_list.append(ord(letters[i]) - 10)
         elif letters[i] == "%":
             letter_list.append(ord(letters[i]) + 1)
+        elif letters[i] == "\\":
+            letter_list.append(ord(letters[i]) - 38)
+        elif letters[i] == '"':
+            letter_list.append(ord(letters[i]) + 21)
         else:
             if letters[i].isalpha() == False:
                 letter_list.append(ord(letters[i]))
