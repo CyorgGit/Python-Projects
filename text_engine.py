@@ -34,6 +34,8 @@ A = black + white + black + white + black + black # ⬛⬜⬛⬜⬛⬛
 B = black + white + black + black # ⬛⬜⬛⬛
 C = black + black + black + black # ⬛⬛⬛⬛
 D = black + black + white + black + white + black # ⬛⬛⬜⬛⬜⬛
+E = black + white + white + white + black + black # ⬛⬜⬜⬜⬛⬛
+F = black + black + black + black + black + black # ⬛⬛⬛⬛⬛⬛
 zerT = (a,h,h,h,a) # 0
 oneT = (f,f,f,f,f) # 1
 twoT = (a,c,a,b,a) # 2
@@ -71,8 +73,8 @@ wwwT = (j,j,j,l,k) # 33
 xxxT = (j,A,r,A,j) # 34
 yyyT = (j,A,r,r,r) # 35
 zzzT = (m,v,r,o,m) # 36
-excT = (f,f,f,i,f) # 37
-pctT = (h,c,B,b,h) # 38
+pctT = (h,c,B,b,h) # 37
+excT = (f,f,f,i,f) # 38
 apoT = (f,f,i,i,i) # 39
 lpaT = (d,b,b,b,d) # 40
 rpaT = (e,c,c,c,e) # 41
@@ -90,7 +92,12 @@ greT = (b,B,c,B,b) # 52
 spaT = (C,C,C,C,C) # 53
 bslT = (b,b,B,c,c) # 54
 quoT = (h,h,C,C,C) # 55
-fonT = (zerT,oneT,twoT,thrT,fouT,fivT,sixT,sevT,eigT,ninT,colT,aaaT,bbbT,cccT,dddT,eeeT,fffT,gggT,hhhT,iiiT,jjjT,kkkT,lllT,mmmT,nnnT,oooT,pppT,qqqT,rrrT,sssT,tttT,uuuT,vvvT,wwwT,xxxT,yyyT,zzzT,excT,pctT,apoT,lpaT,rpaT,astT,pluT,comT,equT,perT,slaT,queT,lbrT,rbrT,lesT,greT,spaT,bslT,quoT)
+scoT = (i,f,i,f,f) # 56
+esmT = (C,h,C,h,a) # 57
+lcbT = (d,B,b,B,d) # 58
+rcbT = (e,B,c,B,e) # 59
+carT = (B,h,C,C,C) # 60
+fonT = (zerT,oneT,twoT,thrT,fouT,fivT,sixT,sevT,eigT,ninT,colT,aaaT,bbbT,cccT,dddT,eeeT,fffT,gggT,hhhT,iiiT,jjjT,kkkT,lllT,mmmT,nnnT,oooT,pppT,qqqT,rrrT,sssT,tttT,uuuT,vvvT,wwwT,xxxT,yyyT,zzzT,pctT,excT,apoT,lpaT,rpaT,astT,pluT,comT,equT,perT,slaT,queT,lbrT,rbrT,lesT,greT,spaT,bslT,quoT,scoT,esmT,lcbT,rcbT,carT)
 for i in range(5):
     print("".join((fonT[11])[i]) + "".join((fonT[12])[i]) + "".join((fonT[13])[i]) + "".join((fonT[14])[i]) + "".join((fonT[15])[i]))
 print("\n")
@@ -110,13 +117,16 @@ for i in range(5):
     print("".join((fonT[36])[i]) + "".join((fonT[0])[i]) + "".join((fonT[1])[i]) + "".join((fonT[2])[i]) + "".join((fonT[3])[i]) + "".join((fonT[4])[i]) + "".join((fonT[5])[i]))
 print("\n")
 for i in range(5):
-    print("".join((fonT[6])[i]) + "".join((fonT[7])[i]) + "".join((fonT[8])[i]) + "".join((fonT[9])[i]) + "".join((fonT[10])[i]) + "".join((fonT[46])[i]) + "".join((fonT[44])[i]) + "".join((fonT[39])[i]) + "".join((fonT[55])[i]))
+    print("".join((fonT[6])[i]) + "".join((fonT[7])[i]) + "".join((fonT[8])[i]) + "".join((fonT[9])[i]) + "".join((fonT[10])[i]) + "".join((fonT[56])[i]) + "".join((fonT[46])[i]) + "".join((fonT[44])[i]) + "".join((fonT[39])[i]) + "".join((fonT[55])[i]))
 print("\n")
 for i in range(5):
     print("".join((fonT[40])[i]) + "".join((fonT[41])[i]) + "".join((fonT[51])[i]) + "".join((fonT[52])[i]) + "".join((fonT[49])[i]) + "".join((fonT[50])[i]))
 print("\n")
 for i in range(5):
-    print("".join((fonT[43])[i]) + "".join((fonT[45])[i]) + "".join((fonT[42])[i]) + "".join((fonT[37])[i]) + "".join((fonT[48])[i]) + "".join((fonT[38])[i]) + "".join((fonT[47])[i]) + "".join((fonT[54])[i]))
+    print("".join((fonT[58])[i]) + "".join((fonT[59])[i]) + "".join((fonT[43])[i]) + "".join((fonT[45])[i]) + "".join((fonT[42])[i]) + "".join((fonT[38])[i]) + "".join((fonT[48])[i]) + "".join((fonT[37])[i]))
+print("\n")
+for i in range(5):
+    print("".join((fonT[47])[i]) + "".join((fonT[54])[i]) + "".join((fonT[60])[i]))
 while True:
     letters = input("Say something: ")
     if len(letters) == 0:
@@ -133,9 +143,11 @@ while True:
         elif letters[i].isdigit() == True:
             letter_list.append(ord(letters[i]) - 48)
         elif letters[i] == "!":
-            letter_list.append(ord(letters[i]) + 4)
+            letter_list.append(ord(letters[i]) + 5)
         elif letters[i] == ":":
             letter_list.append(ord(letters[i]) - 48)
+        elif letters[i] == ";":
+            letter_list.append(ord(letters[i]) - 3)
         elif letters[i] == " ":
             letter_list.append(ord(letters[i]) + 21)
         elif letters[i] == "=":
@@ -150,12 +162,18 @@ while True:
             letter_list.append(ord(letters[i]) - 9)
         elif letters[i] == ">":
             letter_list.append(ord(letters[i]) - 10)
-        elif letters[i] == "%":
-            letter_list.append(ord(letters[i]) + 1)
         elif letters[i] == "\\":
             letter_list.append(ord(letters[i]) - 38)
         elif letters[i] == '"':
             letter_list.append(ord(letters[i]) + 21)
+        elif letters[i] == "{":
+            letter_list.append(ord(letters[i]) - 65)
+        elif letters[i] == '}':
+            letter_list.append(ord(letters[i]) - 66)
+        elif letters[i] == '^':
+            letter_list.append(ord(letters[i]) - 34)
+        elif letters[i] == '🙂':
+            letter_list.append(ord(letters[i]) - 128521)
         else:
             if letters[i].isalpha() == False:
                 letter_list.append(ord(letters[i]))
