@@ -6,7 +6,9 @@ List of each one and what they do:\
 `cube.py` is a really, really rough attempt to try to visualize a spinning 3D cube.\
 `mario.py` shows a sprite of Mario. Usually.\
 `mcdays.py` counts an approximation of real life time spent in a Minecraft world.\
+`mean_calculator.py` calculates the mean/average of stuff.\
 `rainbow.py` is a rainbow scroller.\
+`random_hex.py` makes a randomly generated hex color code.\
 `scroller.py` is a various assortment of scrollers I've made.\
 `shop.py` is a basic shop system. ***This needs `shop_list.py` to work!***\
 `shop_list.py` is a list for `shop.py`, separated for easy modification and to not take up too much space on `shop.py`.\
