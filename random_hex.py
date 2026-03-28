@@ -11,17 +11,15 @@ for i in range(6):
     character = valid_values[thing]
     code = code + character
 print(code)
-no1 = 0 # All the RGB composition code starts here. Very unclean. I'll fix it when I feel like it.
-no2 = 2
+no1 = 0
 rgb_values = []
 rgb_percent = []
 rgb_firstdigit = []
 for i in range(3):
-    hexcode = code[(no1):(no2)]
+    hexcode = code[(no1):(no1+2)]
     deccode = int(hexcode, 16)
     rgb_values.append(deccode)
     no1 = no1 + 2
-    no2 = no2 + 2
 total_rgb = rgb_values[0] + rgb_values[1] + rgb_values[2]
 no1 = 0
 for i in range(3):
