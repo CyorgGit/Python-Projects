@@ -4,6 +4,7 @@ List of each one and what they do:\
 `calc.py` is a calculator that adds two randomly generated numbers.\
 `clock.py` is a working digital clock.\
 `cube.py` is a really, really rough attempt to try to visualize a spinning 3D cube.\
+`gui_calculator.py` is a calculator with a graphical user interface.\
 `mario.py` shows a sprite of Mario. Usually.\
 `mcdays.py` counts an approximation of real life time spent in a Minecraft world.\
 `mean_calculator.py` calculates the mean/average of stuff.\
